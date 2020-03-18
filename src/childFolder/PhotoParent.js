@@ -10,7 +10,7 @@ const PhotoParent = () => {
     useEffect(()=> {
         axios.get('https://api.nasa.gov/planetary/apod?api_key=adtsDp3gRwEeo3BrknW0illTpiNlF0wdgRUL0O2l')
         .then(response=>{
-            console.log(response.data)
+            // console.log(response.data)
             setPhotos(response.data)
         })
         .catch(error => {
@@ -21,9 +21,7 @@ const PhotoParent = () => {
     return(
     <div className="card">
         <div className="entry">
-        {/* {photos.map((photo, index)=>{ */}
-            return <PhotoCard title={photos.title} image={photos.url} explain={photos.explanation}/> 
-        {/* })} */}
+            <PhotoCard title={photos.title} image={photos.url} explain={photos.explanation}/> 
         </div>
     </div>
     )
