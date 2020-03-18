@@ -1,14 +1,19 @@
 import React from "react";
+import PhotoParent from "./childFolder/PhotoParent"
 import "./App.css";
+import PhotoCard from "./childFolder/PhotoCard";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <h1>NASA: Photo of the Day</h1>
+      <p>I want to show the date here</p>
+      <div className="image-card">
+      <PhotoParent /> 
+      {/* **CHANGE PHOTOCARD TO PHOTOPARENT ONCE YOU'VE RETURNED SOMETHING/DONE MAP */}
+      </div>
     </div>
+   
   );
 }
 
