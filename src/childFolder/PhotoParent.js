@@ -4,7 +4,7 @@ import axios from "axios"
 
 const PhotoParent = () => {
     //set up our states
-    const [photos, setPhotos] = useState()
+    const [photos, setPhotos] = useState([])
 
     //useState with our axios.get.then.catch
     useEffect(()=> {
@@ -19,8 +19,13 @@ const PhotoParent = () => {
     }, [])
 
     return(
-    //mapping through PhotoCard--so it will show
-     <PhotoCard />
+    <div className="card">
+        <div className="entry">
+        {/* {photos.map((photo, index)=>{ */}
+            return <PhotoCard title={photos.title} image={photos.url} explain={photos.explanation}/> 
+        {/* })} */}
+        </div>
+    </div>
     )
 }
 export default PhotoParent
