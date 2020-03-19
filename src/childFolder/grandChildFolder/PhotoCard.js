@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Col, Card, CardText, CardBody, Button, Collapse} from 'reactstrap';
+import {Col, Card, CardBody, Button, Collapse} from 'reactstrap';
 import styled from "styled-components"
 
 const PhotoCard = props => {
