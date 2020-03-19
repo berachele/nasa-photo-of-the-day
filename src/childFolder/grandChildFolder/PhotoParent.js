@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import PhotoCard from "./PhotoCard"
 import axios from "axios"
+import {Card} from 'reactstrap';
 
 const PhotoParent = () => {
     //set up our states
@@ -19,11 +20,11 @@ const PhotoParent = () => {
     }, [])
 
     return(
-    <div className="card">
+    <Card className="card">
         <div className="entry">
             <PhotoCard title={photos.title} image={photos.url} explain={photos.explanation}/> 
         </div>
-    </div>
+    </Card>
     )
 }
 export default PhotoParent
