@@ -2,6 +2,7 @@ import React from "react";
 import PhotoParent from "./childFolder/grandChildFolder/PhotoParent"
 import DateChanger from "./childFolder/DateChanger"
 import "./App.css";
+// import { Button } from 'reactstrap';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <div className="image-card">
         <PhotoParent /> 
       </div>
+      {/* <Button color="danger">Danger!</Button>  tester for if styled-compnent was working*/}
     </div>
    
   );
