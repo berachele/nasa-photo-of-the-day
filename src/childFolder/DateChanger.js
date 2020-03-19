@@ -4,7 +4,7 @@
   
 function DateChanger(){
   //set up states for showing currect date
-  const [date, setDate] = useState("")
+  const [date, setDate] = useState("2020-03-19")//returning as bad request error 400 when I do this, empty string, array or object
 
   //useEffect
   useEffect(()=>{
@@ -17,7 +17,7 @@ function DateChanger(){
     .catch(error=>{
       console.log('DATE ERROR', error)
     })
-  }, [date]) //can put in date later
+  }, [date]) // put in date
 
   return (
     <div className="dropdown-menu">

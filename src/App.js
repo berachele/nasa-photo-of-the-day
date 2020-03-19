@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import PhotoParent from "./childFolder/grandChildFolder/PhotoParent"
 import DateChanger from "./childFolder/DateChanger"
 import "./App.css";
